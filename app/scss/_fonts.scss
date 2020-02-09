@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Roboto/RobotoLight.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto/RobotoRegular.eot") format("embedded-opentype"),
+    url("../fonts/Roboto/RobotoLight.woff2") format("woff2"), url("../fonts/Roboto/RobotoLight.woff") format("woff"),
+    url("../fonts/Roboto/RobotoLight.ttf") format("truetype"), url("../fonts/Roboto/RobotoLight.svg") format("svg");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto/RobotoRegular.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto/RobotoRegular.eot") format("embedded-opentype"),
+    url("../fonts/Roboto/RobotoRegular.woff2") format("woff2"), url("../fonts/Roboto/RobotoRegular.woff") format("woff"),
+    url("../fonts/Roboto/RobotoRegular.ttf") format("truetype"), url("../fonts/Roboto/RobotoRegular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto/RobotoMedium.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/Roboto/RobotoMedium.eot") format("embedded-opentype"),
+    url("../fonts/Roboto/RobotoMedium.woff2") format("woff2"), url("../fonts/Roboto/RobotoMedium.woff") format("woff"),
+    url("../fonts/Roboto/RobotoMedium.ttf") format("truetype"), url("../fonts/Roboto/RobotoMedium.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Roboto/RobotoBold.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/Roboto/RobotoBold.eot") format("embedded-opentype"),
+    url("../fonts/Roboto/RobotoBold.woff2") format("woff2"), url("../fonts/Roboto/RobotoBold.woff") format("woff"),
+    url("../fonts/Roboto/RobotoBold.ttf") format("truetype"), url("../fonts/Roboto/RobotoBold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Dosis/DosisRegular.eot");
+  src: local(""), url("../fonts/Dosis/DosisRegular.eot") format("embedded-opentype"),
+    url("../fonts/Dosis/DosisRegular.woff2") format("woff2"), url("../fonts/Dosis/DosisRegular.woff") format("woff"),
+    url("../fonts/Dosis/DosisRegular.ttf") format("truetype"), url("../Dosis/DosisRegular.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Dosis/DosisMedium.eot"); 
+  src: local(""), url("../fonts/Dosis/DosisMedium.eot") format("embedded-opentype"),
+    url("../fonts/Dosis/DosisMedium.woff2") format("woff2"), url("../fonts/Dosis/DosisMedium.woff") format("woff"),
+    url("../fonts/Dosis/DosisMedium.ttf") format("truetype"), url("../fonts/Dosis/DosisMedium.svg") format("svg"); 
+}
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Dosis/DosisSemiBold.eot");
+    src: local(""), url("../fonts/Dosis/DosisSemiBold.eot") format("embedded-opentype"),
+      url("../fonts/Dosis/DosisSemiBold.woff2") format("woff2"), url("../fonts/Dosis/DosisSemiBold.woff") format("woff"),
+      url("../fonts/Dosis/DosisSemiBold.ttf") format("truetype"), url("../fonts/Dosis/DosisSemiBold.svg") format("svg");
+  }
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Dosis/DosisBold.eot");
+  src: local(""), url("../fonts/Dosis/DosisBold.eot") format("embedded-opentype"),
+    url("../fonts/Dosis/DosisBold.woff2") format("woff2"), url("../fonts/Dosis/DosisBold.woff") format("woff"),
+    url("../fonts/Dosis/DosisBold.ttf") format("truetype"), url("../fonts/Dosis/DosisBold.svg") format("svg");
+}

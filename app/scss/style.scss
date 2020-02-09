@@ -64,6 +64,8 @@ h5 {
     font-size: 36px;
     line-height: 24px;
     color: $color_white;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
   }
   &__burger {
     display: none;
@@ -77,6 +79,8 @@ h5 {
 
 .menu-nav {
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   cursor: pointer;
   li:last-child a {
     background: $color_white;
@@ -113,7 +117,8 @@ h5 {
     margin-bottom: 38px;
     font-size: 54px;
     line-height: 60px;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
   }
 
   // .hero__text
@@ -123,6 +128,8 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   &__list li {
@@ -131,6 +138,8 @@ h5 {
     list-style: none;
     background: url("../img/list-hero.png") no-repeat;
     padding-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 
   li:last-child {
@@ -146,9 +155,13 @@ h5 {
     font-size: 14px;
     line-height: 30px;
     background: $color_white;
+    transition: ease 0.5s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  &__button button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-
   &__image {
     position: absolute;
     right: 0;
@@ -206,9 +219,10 @@ h5 {
   // .item__title
 
   &__title h2 {
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 15px;
-    font-weight: 700;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
   }
 
   // .item__text
@@ -217,6 +231,8 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     width: 290px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 }
 //Третий экран
@@ -245,6 +261,8 @@ h5 {
 
   &__title h2 {
     font-size: $fz_title;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
   }
 
   // .stranded__text
@@ -253,6 +271,8 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   &__text:last-child {
@@ -265,6 +285,8 @@ h5 {
     list-style: none;
     background: url("../img/list.png") no-repeat;
     padding-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -276,6 +298,8 @@ h5 {
   &__title h2 {
     font-size: $fz_title;
     margin-bottom: 30px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
   }
 
   // .card__text
@@ -287,6 +311,8 @@ h5 {
     color: $color_77777;
     font-size: 14px;
     line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   // .card__row
@@ -325,6 +351,8 @@ h5 {
   // .card__subtitle
 
   &__subtitle h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
     padding-top: 15px;
     font-size: 20px;
   }
@@ -337,6 +365,8 @@ h5 {
     padding-top: 5px;
     padding-bottom: 5px;
     position: relative;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
   }
 
   // .card__list
@@ -352,6 +382,8 @@ h5 {
   &__list li {
     border-bottom: 1px dashed #eeeeee;
     padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   &__list li:last-child {
@@ -365,6 +397,8 @@ h5 {
     color: #aaaaaa;
     font-size: 14px;
     line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   // .card__btn
@@ -381,6 +415,8 @@ h5 {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.5s ease;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
   }
 
   &__btn {
@@ -443,6 +479,8 @@ h5 {
   &__title h2 {
     text-align: center;
     font-size: 36px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
   }
 
   // .comment__text
@@ -455,6 +493,8 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   // .comment__row
@@ -488,6 +528,8 @@ h5 {
     color: $color_77777;
     line-height: 24px;
     padding: 35px 35px 35px 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 
   // .comment__image
@@ -505,6 +547,8 @@ h5 {
     padding-left: 135px;
     font-size: 18px;
     line-height: 24px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
   }
 
   // .comment__organization
@@ -516,6 +560,8 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     color: $color_77777;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -530,6 +576,8 @@ h5 {
     padding-top: 120px;
     padding-bottom: 85px;
     color: $color_white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
   }
 
   // .download__row
@@ -612,7 +660,9 @@ h5 {
     font-size: 30px;
     line-height: 24px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
   }
 
   // .download__text
@@ -625,6 +675,8 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     color: $color_77777;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -650,12 +702,13 @@ h5 {
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
   &__copyright p {
     margin: 0 auto;
   }
 }
-
 
 /* Слайдер */
 .slick-slider {
@@ -759,19 +812,21 @@ h5 {
     border: 1px solid $color_77777;
     background: $color_77777;
     width: 40px;
-    height:2px;
+    height: 3px;
+    margin-top: 40px;
     margin-left: 10px;
     outline: none;
   }
   /* Активная точка */
-  .slick-dots li.slick-active button{
+  .slick-dots li.slick-active button {
     background: $bc_g;
-    height:2px;
+    height: 3px;
     border: 0;
   }
-  
 }
-
+.slider__item{
+  transition: all 0.5s;
+}
 .slider__item.slick-center {
   transform: scale(1.09);
   transition: all 0.5s;

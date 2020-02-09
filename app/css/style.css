@@ -1,4 +1,60 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Roboto/RobotoLight.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto/RobotoRegular.eot") format("embedded-opentype"), url("../fonts/Roboto/RobotoLight.woff2") format("woff2"), url("../fonts/Roboto/RobotoLight.woff") format("woff"), url("../fonts/Roboto/RobotoLight.ttf") format("truetype"), url("../fonts/Roboto/RobotoLight.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto/RobotoRegular.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/Roboto/RobotoRegular.eot") format("embedded-opentype"), url("../fonts/Roboto/RobotoRegular.woff2") format("woff2"), url("../fonts/Roboto/RobotoRegular.woff") format("woff"), url("../fonts/Roboto/RobotoRegular.ttf") format("truetype"), url("../fonts/Roboto/RobotoRegular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto/RobotoMedium.eot");
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/Roboto/RobotoMedium.eot") format("embedded-opentype"), url("../fonts/Roboto/RobotoMedium.woff2") format("woff2"), url("../fonts/Roboto/RobotoMedium.woff") format("woff"), url("../fonts/Roboto/RobotoMedium.ttf") format("truetype"), url("../fonts/Roboto/RobotoMedium.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Roboto/RobotoBold.eot");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/Roboto/RobotoBold.eot") format("embedded-opentype"), url("../fonts/Roboto/RobotoBold.woff2") format("woff2"), url("../fonts/Roboto/RobotoBold.woff") format("woff"), url("../fonts/Roboto/RobotoBold.ttf") format("truetype"), url("../fonts/Roboto/RobotoBold.svg") format("svg"); }
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Dosis/DosisRegular.eot");
+  src: local(""), url("../fonts/Dosis/DosisRegular.eot") format("embedded-opentype"), url("../fonts/Dosis/DosisRegular.woff2") format("woff2"), url("../fonts/Dosis/DosisRegular.woff") format("woff"), url("../fonts/Dosis/DosisRegular.ttf") format("truetype"), url("../Dosis/DosisRegular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Dosis/DosisMedium.eot");
+  src: local(""), url("../fonts/Dosis/DosisMedium.eot") format("embedded-opentype"), url("../fonts/Dosis/DosisMedium.woff2") format("woff2"), url("../fonts/Dosis/DosisMedium.woff") format("woff"), url("../fonts/Dosis/DosisMedium.ttf") format("truetype"), url("../fonts/Dosis/DosisMedium.svg") format("svg"); }
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Dosis/DosisSemiBold.eot");
+  src: local(""), url("../fonts/Dosis/DosisSemiBold.eot") format("embedded-opentype"), url("../fonts/Dosis/DosisSemiBold.woff2") format("woff2"), url("../fonts/Dosis/DosisSemiBold.woff") format("woff"), url("../fonts/Dosis/DosisSemiBold.ttf") format("truetype"), url("../fonts/Dosis/DosisSemiBold.svg") format("svg"); }
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Dosis/DosisBold.eot");
+  src: local(""), url("../fonts/Dosis/DosisBold.eot") format("embedded-opentype"), url("../fonts/Dosis/DosisBold.woff2") format("woff2"), url("../fonts/Dosis/DosisBold.woff") format("woff"), url("../fonts/Dosis/DosisBold.ttf") format("truetype"), url("../fonts/Dosis/DosisBold.svg") format("svg"); }
+
 body {
   font-family: "Helvetica", sans-serif;
   margin: 0;
@@ -41,7 +97,9 @@ li {
     margin-right: auto;
     font-size: 36px;
     line-height: 24px;
-    color: #ffffff; }
+    color: #ffffff;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold; }
   .header-menu__burger {
     display: none; }
 
@@ -51,6 +109,8 @@ li {
 
 .menu-nav {
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   cursor: pointer; }
   .menu-nav li:last-child a {
     background: #ffffff;
@@ -91,18 +151,23 @@ li {
     margin-bottom: 38px;
     font-size: 54px;
     line-height: 60px;
-    font-weight: 400; }
+    font-weight: 600;
+    font-family: "Dosis", sans-serif; }
   .hero__text {
     width: 450px;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .hero__list li {
     padding-bottom: 20px;
     font-size: 14px;
     list-style: none;
     background: url("../img/list-hero.png") no-repeat;
-    padding-left: 40px; }
+    padding-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; }
   .hero li:last-child {
     padding-bottom: 0;
     margin-bottom: 35px; }
@@ -114,6 +179,12 @@ li {
     font-size: 14px;
     line-height: 30px;
     background: #ffffff;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; }
+  .hero__button button:hover {
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .hero__image {
@@ -162,13 +233,16 @@ li {
             flex: 1 1 auto;
     padding-left: 15px; }
   .item__title h2 {
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 15px;
-    font-weight: 700; }
+    font-family: "Dosis", sans-serif;
+    font-weight: 600; }
   .item__text {
     font-size: 14px;
     line-height: 24px;
-    width: 290px; }
+    width: 290px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
 
 .stranded {
   margin-top: 120px;
@@ -188,11 +262,15 @@ li {
             flex: 0 1 520px;
     margin-left: auto; }
   .stranded__title h2 {
-    font-size: 36px; }
+    font-size: 36px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600; }
   .stranded__text {
     font-size: 14px;
     line-height: 24px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .stranded__text:last-child {
     padding-bottom: 0; }
   .stranded__list li {
@@ -200,21 +278,27 @@ li {
     font-size: 14px;
     list-style: none;
     background: url("../img/list.png") no-repeat;
-    padding-left: 40px; }
+    padding-left: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; }
 
 .card {
   padding: 125px 0;
   text-align: center; }
   .card__title h2 {
     font-size: 36px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500; }
   .card__text {
     margin: 0 auto;
     max-width: 690px;
     margin-bottom: 80px;
     color: #777777;
     font-size: 14px;
-    line-height: 24px; }
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .card__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -254,6 +338,8 @@ li {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
   .card__subtitle h2 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
     padding-top: 15px;
     font-size: 20px; }
   .card__label {
@@ -261,7 +347,9 @@ li {
     font-size: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
-    position: relative; }
+    position: relative;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500; }
   .card__list ul {
     list-style: none;
     margin-top: 35px;
@@ -270,14 +358,18 @@ li {
     line-height: 30px; }
   .card__list li {
     border-bottom: 1px dashed #eeeeee;
-    padding: 5px; }
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .card__list li:last-child {
     border: none; }
   .card__untext {
     margin-top: 35px;
     color: #aaaaaa;
     font-size: 14px;
-    line-height: 24px; }
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .card__btn button {
     text-decoration: none;
     font-size: 14px;
@@ -291,7 +383,9 @@ li {
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    transition: all 0.5s ease;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700; }
   .card__btn {
     padding-bottom: 40px; }
   .card__item:hover .card__btn button {
@@ -357,7 +451,9 @@ li {
   min-width: 0; }
   .comment__title h2 {
     text-align: center;
-    font-size: 36px; }
+    font-size: 36px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600; }
   .comment__text {
     margin: 0 auto;
     max-width: 690px;
@@ -365,7 +461,9 @@ li {
     color: #777777;
     font-size: 14px;
     line-height: 24px;
-    text-align: center; }
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .comment__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -399,7 +497,9 @@ li {
     font-size: 14px;
     color: #777777;
     line-height: 24px;
-    padding: 35px 35px 35px 35px; }
+    padding: 35px 35px 35px 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
   .comment__image img {
     position: absolute;
     margin-left: 35px; }
@@ -408,14 +508,18 @@ li {
     margin-top: 15px;
     padding-left: 135px;
     font-size: 18px;
-    line-height: 24px; }
+    line-height: 24px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600; }
   .comment__organization {
     margin-top: -10px;
     padding-left: 135px;
     padding-bottom: 40px;
     font-size: 14px;
     line-height: 24px;
-    color: #777777; }
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
 
 .download {
   background-image: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
@@ -428,7 +532,9 @@ li {
     text-align: center;
     padding-top: 120px;
     padding-bottom: 85px;
-    color: #ffffff; }
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600; }
   .download__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -505,7 +611,9 @@ li {
     font-size: 30px;
     line-height: 24px;
     text-align: center;
-    margin-left: 30px; }
+    margin-left: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600; }
   .download__text {
     margin-top: -10px;
     margin-bottom: 25px;
@@ -513,7 +621,9 @@ li {
     margin-left: 45px;
     font-size: 14px;
     line-height: 24px;
-    color: #777777; }
+    color: #777777;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; }
 
 .footer {
   background-color: #222222; }
@@ -556,7 +666,9 @@ li {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
-    padding-bottom: 55px; }
+    padding-bottom: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; }
   .footer__copyright p {
     margin: 0 auto; }
 
@@ -656,15 +768,21 @@ li {
     border: 1px solid #777777;
     background: #777777;
     width: 40px;
-    height: 2px;
+    height: 3px;
+    margin-top: 40px;
     margin-left: 10px;
     outline: none; }
   .slider .slick-dots li.slick-active button {
     background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
     background: -o-linear-gradient(left, #fd712c 0%, #f21780 100%);
     background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
-    height: 2px;
+    height: 3px;
     border: 0; }
+
+.slider__item {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .slider__item.slick-center {
   -webkit-transform: scale(1.09);
