@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Play_Icon" data-name="Play Icon" class="cls-1" d="M973.04,3991.18l-18.16,10.56a1.923,1.923,0,0,1-2.88-1.68v-21.12a1.923,1.923,0,0,1,2.88-1.68l18.16,10.56A1.95,1.95,0,0,1,973.04,3991.18Z" transform="translate(-952 -3977)"/>
+</svg>

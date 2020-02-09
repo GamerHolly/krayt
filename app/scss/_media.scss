@@ -1,0 +1,287 @@
+@media screen and (max-width: 1140px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .hero {
+        &__image {
+            display: none;
+        }
+    }
+
+    .columns {
+        &__row {
+            justify-content: center;
+        }
+
+        &__main {}
+    }
+
+    .stranded {
+        &__image {
+            display: none;
+        }
+
+        &__body {
+            margin: 0 auto;
+        }
+    }
+
+    .card {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        &__column {
+            padding-bottom: 40px;
+        }
+    }
+
+    .download {
+        &__row {
+            flex-direction: column;
+            margin-top: -20px
+        }
+
+        &__column {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body.lock{
+        overflow: hidden;
+    }
+    .header-menu{
+        &__burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        &__burger span{
+            position: absolute;
+            background-color: #ffffff;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            transition: all 0.5s ease;
+        }
+        &__burger::before, &__burger::after{
+            content: '';
+            background-color: #ffffff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.5s ease;
+        }
+        &__burger::before{
+            top: 0;
+        }
+        &__burger::after{
+            bottom: 0;
+        }
+        &__burger.active span{
+            transform: scale(0);
+        }
+        &__burger.active::before{
+            transform: rotate(45deg);
+            top:9px;
+            background-color: #000000;
+        }
+        &__burger.active::after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+            background-color: #000000;
+        }
+    }
+    .menu-nav{
+        position: fixed; 
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        padding: 100px 0 0 0;
+        transition: all 0.5s ease;
+        &.active{
+            right:  0;
+        }
+        &__list{
+            display: block;
+            text-align: center;
+            
+            
+        }
+        &__list li{
+            margin: 50px 0 0 0;
+            
+        }
+        &__item{
+            margin: 0 auto;
+            color: #000000;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        li:last-child a {
+            background: #000000;
+            width: 150px;
+            border-radius: 17.5px;
+            font-size: 20px;
+            padding: 10px 15px 10px 15px;
+            line-height: 40px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+    
+    .container {
+        width: 95%;
+    }
+
+    .hero {
+        &__image {
+            display: none;
+        }
+    }
+
+    .columns {
+        &__row {
+            justify-content: center;
+        }
+
+        &__main {
+            padding: 0 8px;
+
+        }
+    }
+
+    .stranded {
+        &__image {
+            display: none;
+        }
+
+        &__body {
+            margin: 0 auto;
+        }
+    }
+
+    .card {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -20px
+        }
+
+        &__column {
+            padding-bottom: 20px;
+        }
+    }
+
+    .download {
+        &__row {
+            flex-direction: column;
+            margin-top: -20px
+        }
+
+        &__column {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    
+
+    .container {
+        width: 80%;
+    }
+
+    .hero {
+
+        &__text {
+            text-align: justify;
+            width: 350px;
+        }
+    }
+
+    .columns {
+
+        &__row {
+            justify-content: center;
+            margin:  0 auto;
+        }
+
+        &__main {}
+    }
+    .card{
+        &__row{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -40px
+        }
+        &__column{
+            padding-bottom: 40px;
+        }
+        &__item{
+            min-width: 350px;
+            margin-left: -40px;
+        }
+
+        
+    }
+    .download {
+        &__title h2{
+            flex-direction: column;
+            line-height: 40px;
+        }
+    }
+
+}
+@media screen and (max-width:375px){
+    .hero {
+
+        &__text {
+            text-align: left;
+            width: 320px;
+        }
+    }
+    .columns {
+
+        &__row {
+            justify-content: center;
+            margin:  0 auto;
+        }
+
+    }
+    .card{
+        &__row{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -40px
+        }
+        &__column{
+            padding-bottom: 40px;
+        }
+        &__item{
+            min-width: 350px;
+            margin-left: -35px;
+        }
+
+        
+    }
+    .item{
+        &__text{
+            width: 260px;
+        }
+    }
+}
