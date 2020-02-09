@@ -1,5 +1,20 @@
 @import "fonts";
 
+//Перемененные 
+
+$bc_g: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+$fz_title: 36px;
+$color_white: #ffffff;
+$color_77777: #777777;
+
+@mixin down__image($ab,$bc, $p, $w, $h, $t) {
+    position: $ab;
+    background: $bc;
+    padding: $p;
+    width: $w;
+    height: $h;
+    transition: $t;
+}
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
@@ -8,7 +23,7 @@ body {
 
 }
 
-/* Спецификация */
+//Спецификации
 
 
 
@@ -30,8 +45,9 @@ h4,
 h5 {}
 
 
+//первый экран
 .header {
-    background-image: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background-image: $bc_g;
 
 }
 
@@ -53,7 +69,7 @@ h5 {}
         margin-right: auto;
         font-size: 36px;
         line-height: 24px;
-        color: #ffffff;
+        color: $color_white;
     }
     &__burger{
         display: none;
@@ -72,7 +88,7 @@ h5 {}
     font-size: 14px;
     cursor: pointer;
     li:last-child a {
-        background: #ffffff;
+        background: $color_white;
         padding: 8px 22px 8px 22px;
         border-radius: 17.5px;
         color: #000;
@@ -91,7 +107,7 @@ h5 {}
 
     &__item {
         margin-left: 55px;
-        color: #ffffff;
+        color: $color_white;
         text-decoration: none;
     }
 
@@ -102,7 +118,7 @@ h5 {}
     display: flex;
     flex-direction: column;
     max-width: 550px;
-    color: #ffffff;
+    color: $color_white;
     padding-bottom: 200px;
 
     &__title h2 {
@@ -145,7 +161,7 @@ h5 {}
         padding: 4px 26px 4px 26px;
         font-size: 14px;
         line-height: 30px;
-        background: #ffffff;
+        background: $color_white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -157,7 +173,7 @@ h5 {}
     }
 }
 
-
+//Второй экран
 .columns {
     padding: 50px 0 60px;
     margin-top: 120px;
@@ -232,7 +248,7 @@ h5 {}
     }
 
 }
-
+//Третий экран
 .stranded {
 
     margin-top: 120px;
@@ -259,7 +275,7 @@ h5 {}
     // .stranded__title
 
     &__title h2 {
-        font-size: 36px;
+        font-size: $fz_title;
     }
 
     // .stranded__text
@@ -290,7 +306,7 @@ h5 {}
     text-align: center;
    
     &__title h2 {
-        font-size: 36px;
+        font-size: $fz_title;
         margin-bottom: 30px;
     }
 
@@ -300,7 +316,7 @@ h5 {}
         margin: 0 auto;
         max-width: 690px;
         margin-bottom: 80px;
-        color: #777777;
+        color: $color_77777;
         font-size: 14px;
         line-height: 24px;
     }
@@ -333,7 +349,7 @@ h5 {}
     }
 
     &__item:hover {
-        background: #ffffff;
+        background: $color_white;
         transform: scale(1.02);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         transition: all 0.5s;
@@ -351,7 +367,7 @@ h5 {}
     // .card__label
 
     &__label {
-        background: #ffffff;
+        background: $color_white;
         font-size: 40px;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -363,7 +379,7 @@ h5 {}
     &__list ul {
         list-style: none;
         margin-top: 35px;
-        color: #777777;
+        color: $color_77777;
         font-size: 14px;
         line-height: 30px;
 
@@ -394,7 +410,7 @@ h5 {}
         font-size: 14px;
         line-height: 24px;
         color: #000000;
-        background: #ffffff;
+        background: $color_white;
         border: 1px solid #eeeeee;
         border-radius: 25px;
         padding: 8px 35px 8px 35px;
@@ -408,14 +424,14 @@ h5 {}
     }
 
     &__item:hover &__btn button {
-        background: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
-        color: #ffffff;
+        background: $bc_g;
+        color: $color_white;
         transition: all 0.5s ease;
     }
 
     &__item:hover &__label {
-        background: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
-        color: #ffffff;
+        background: $bc_g;
+        color: $color_white;
         transition: all 0.5s ease;
 
     }
@@ -450,7 +466,7 @@ h5 {}
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);
+    background: $bc_g;
     border: none;
     position: absolute;
     margin: auto;
@@ -480,7 +496,7 @@ h5 {}
         margin: 0 auto;
         max-width: 690px;
         margin-bottom: 80px;
-        color: #777777;
+        color: $color_77777;
         font-size: 14px;
         line-height: 24px;
         text-align: center;
@@ -514,7 +530,7 @@ h5 {}
     &__intext {
         text-align: left;
         font-size: 14px;
-        color: #777777;
+        color: $color_77777;
         line-height: 24px;
         padding: 35px 35px 35px 35px;
 
@@ -548,21 +564,21 @@ h5 {}
         padding-bottom: 40px;
         font-size: 14px;
         line-height: 24px;
-        color: #777777;
+        color: $color_77777;
     }
 }
 
 .download {
-    background-image: linear-gradient(to right, rgb(253, 113, 44) 0%, rgb(242, 23, 128) 100%);;
+    background-image: $bc_g;
     padding-bottom: 140px;
 
     &__title h2{
-        font-size: 36px;
+        font-size: $fz_title;
         line-height: 24px;
         text-align: center;
         padding-top: 120px;
         padding-bottom: 85px;
-        color: #ffffff;
+        color: $color_white;
         
     }
     
@@ -583,7 +599,7 @@ h5 {}
     // .download__item
 
     &__item {
-        background: #ffffff;
+        background: $color_white;
         display: flex;
         flex-direction: column;
         height: 114px;
@@ -599,35 +615,21 @@ h5 {}
     // .download__image
 
     &__apple{
-        position: absolute;
-        background: url('../img/Mac\ Icon.png') no-repeat center;
-        padding: 30px 20px 7px 20px;
-        width: 69px;
-        height: 77px;
-        transition: all 0.5s;
+        
+        @include down__image(absolute,url('../img/Mac\ Icon.png') no-repeat center,30px 20px 7px 20px,69px,77px,all 0.5s )
     }
     &__item:hover &__apple{
         background: url('../img/Mac\ Icon2.png') no-repeat center;
     }
     &__android{
-        position: absolute;
-        background: url('../img/Android.png') no-repeat center;
-        padding: 30px 20px 7px 20px;
-        width: 69px;
-        height: 77px;
-        transition: all 0.5s;
+        
+        @include down__image(absolute, url('../img/Android.png') no-repeat center,30px 20px 7px 20px,69px,77px,all 0.5s )
     }
     &__item:hover &__android{
         background: url('../img/AndroidH.png') no-repeat center;
     }
-    &
     &__windows{
-        position: absolute;
-        background: url('../img/Windows.png') no-repeat center;
-        padding: 30px 20px 7px 20px;
-        width: 69px;
-        height: 77px;
-        transition: all 0.5s;
+        @include down__image(absolute, url('../img/Windows.png') no-repeat center,30px 20px 7px 20px,69px,77px,all 0.5s )
     }
     &__item:hover &__windows{
         background: url('../img/WindowsH.png') no-repeat center;
@@ -653,7 +655,7 @@ h5 {}
         margin-left: 45px;
         font-size: 14px;
         line-height: 24px;
-        color: #777777;
+        color: $color_77777;
     }
 }
 
@@ -678,7 +680,7 @@ h5 {}
     &__copyright{
         display: flex;
         justify-content: center;
-        color: #ffffff;
+        color: $color_white;
         font-size: 14px;
         line-height: 24px;
         padding-bottom: 55px;
