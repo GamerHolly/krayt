@@ -1,5 +1,6 @@
+@charset "UTF-8";
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
@@ -326,7 +327,7 @@ li {
         -ms-flex-pack: center;
             justify-content: center; }
   .video__image::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -352,7 +353,8 @@ li {
 
 .comment {
   margin-top: 120px;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  min-width: 0; }
   .comment__title h2 {
     text-align: center;
     font-size: 36px; }
@@ -375,7 +377,8 @@ li {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 33.333%;
         -ms-flex: 0 1 33.333%;
-            flex: 0 1 33.333%; }
+            flex: 0 1 33.333%;
+    min-width: 0; }
   .comment__item {
     background: #f7fafc;
     display: -webkit-box;
@@ -389,7 +392,8 @@ li {
             flex-direction: column;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    min-width: 0; }
   .comment__intext {
     text-align: left;
     font-size: 14px;
@@ -556,9 +560,133 @@ li {
   .footer__copyright p {
     margin: 0 auto; }
 
+/* Слайдер */
+.slick-slider {
+  outline: none; }
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+/* Слайд */
+.slick-slide {
+  outline: none; }
+
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Элемент точки */
+.slider {
+  min-width: 0;
+  position: relative;
+  padding: 0 50px;
+  cursor: pointer;
+  /* Активная точка */ }
+  .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -20px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border: 0; }
+  .slider .slick-arrow.slick-prev {
+    outline: none;
+    left: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: url("../img/arrow_left.png") 0 0/100% no-repeat; }
+  .slider .slick-arrow.slick-prev:hover {
+    background: url("../img/arrow_leftH.png") 0 0/100% no-repeat;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  .slider .slick-arrow.slick-next {
+    outline: none;
+    right: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: url("../img/arrow_right.png") 0 0/100% no-repeat; }
+  .slider .slick-arrow.slick-next:hover {
+    background: url("../img/arrow_rightH.png") 0 0/100% no-repeat;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  .slider .slick-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .slider .slick-dots li {
+    list-style: none; }
+  .slider .slick-dots button {
+    font-size: 0;
+    border: 1px solid #777777;
+    background: #777777;
+    width: 40px;
+    height: 2px;
+    margin-left: 10px;
+    outline: none; }
+  .slider .slick-dots li.slick-active button {
+    background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
+    background: -o-linear-gradient(left, #fd712c 0%, #f21780 100%);
+    background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    height: 2px;
+    border: 0; }
+
+.slider__item.slick-center {
+  -webkit-transform: scale(1.09);
+      -ms-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
 @media screen and (max-width: 1140px) {
+  .comment__name h2 {
+    margin: 0 auto;
+    margin-left: -10px;
+    font-size: 12px; }
+  .comment__organization {
+    margin-left: -10px; }
+  .video {
+    overflow: hidden; }
   .container {
     width: 95%; }
+  .slider {
+    padding: 0; }
   .hero__image {
     display: none; }
   .columns__row {
@@ -590,7 +718,16 @@ li {
             flex-direction: column;
     margin-top: -20px; }
   .download__column {
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .comment__name h2 {
+    margin: 0 auto;
+    margin-left: -10px;
+    font-size: 14px; }
+  .comment__intext p {
+    font-size: 12px; }
+  .comment__organization {
+    margin-left: -10px;
+    font-size: 12px; } }
 
 @media screen and (max-width: 768px) {
   body.lock {
@@ -700,6 +837,17 @@ li {
     margin-top: -20px; }
   .card__column {
     padding-bottom: 20px; }
+  .comment__name h2 {
+    margin: 0 auto;
+    margin-left: -10px;
+    font-size: 14px; }
+  .comment__intext p {
+    font-size: 12px; }
+  .comment__organization {
+    margin-left: -10px;
+    font-size: 12px; }
+  .slider {
+    padding: 0; }
   .download__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
