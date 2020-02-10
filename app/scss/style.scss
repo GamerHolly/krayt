@@ -711,15 +711,8 @@ h5 {
 }
 
 /* Слайдер */
-.slick-slider {
-  outline: none;
-}
+
 /* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
 /* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
@@ -732,36 +725,7 @@ h5 {
 /* Слайд */
 .slick-slide {
   outline: none;
-}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
-/* Слайд основной */
-.slick-slide.slick-current {
-}
-/* Слайд по центру */
-.slick-slide.slick-center {
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-
-/* Элемент точки */
-.slick-dots li button {
-}
+} 
 .slider {
   min-width: 0;
   position: relative;
