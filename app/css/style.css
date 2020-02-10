@@ -574,7 +574,7 @@ li {
     transition: all 0.5s; }
   .download__apple {
     position: absolute;
-    background: url("../img/Mac Icon.png") no-repeat center;
+    background: url("../img/MacIcon.png") no-repeat center;
     padding: 30px 20px 7px 20px;
     width: 69px;
     height: 77px;
@@ -582,7 +582,7 @@ li {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
   .download__item:hover .download__apple {
-    background: url("../img/Mac Icon2.png") no-repeat center; }
+    background: url("../img/MacIcon2.png") no-repeat center; }
   .download__android {
     position: absolute;
     background: url("../img/Android.png") no-repeat center;
@@ -884,7 +884,8 @@ li {
   .header-menu__burger.active span {
     -webkit-transform: scale(0);
         -ms-transform: scale(0);
-            transform: scale(0); }
+            transform: scale(0);
+    position: fixed; }
   .header-menu__burger.active::before {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -904,7 +905,7 @@ li {
     width: 100%;
     height: 100%;
     background: #ffffff;
-    padding: 100px 0 0 0;
+    padding: 80px 0 0 0;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -914,7 +915,7 @@ li {
       display: block;
       text-align: center; }
     .menu-nav__list li {
-      margin: 50px 0 0 0; }
+      margin: 30px 0 0 0; }
     .menu-nav__item {
       margin: 0 auto;
       color: #000000;
@@ -1020,6 +1021,14 @@ li {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto; }
+  .item {
+    margin-left: 40px; }
+    .item__title h2 {
+      font-size: 14px; }
+    .item__text p {
+      font-size: 12px;
+      width: 200px;
+      margin-left: -2px; }
   .card__row {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1035,6 +1044,10 @@ li {
     min-width: 350px;
     margin-left: -35px; }
   .item__text {
-    width: 260px; } }
+    width: 260px; }
+  .download__subtitle h2 {
+    margin-left: 40px; }
+  .download__text p {
+    margin-left: 35px; } }
 
 /*# sourceMappingURL=style.css.map */
